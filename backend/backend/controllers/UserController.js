@@ -1,4 +1,4 @@
-const UserServices = require('../services/UserServices')
+//const UserServices = require('../services/UserServices')
 const { NotFoundError, ValidationError, BadRequestError } = require('../utils/errors')
 const {ROLE} = require('../config/constant')
 
@@ -9,7 +9,7 @@ const generateResetToken = require('../utils/generateResetToken');
 const sendResetEmail = require('../utils/sendResetEmail');
 
 // ----------------- Customers ------------------ //
-exports.getNyxciphers = async (req, res) => {
+/*exports.getNyxciphers = async (req, res) => {
     const nyxciphers = await UserServices.getNyxciphers(req.email)
 	res.status(200).json(nyxciphers)
 }
@@ -86,7 +86,7 @@ exports.updatePerson = async (req, res) => {
 exports.deletePerson = async (req, res) => {
     const persons = await UserServices.deletePerson(req.params.id)
     res.status(200).json(persons)
-}
+}*/
 
 exports.registerUser = [
     // Run validations first

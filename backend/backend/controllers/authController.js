@@ -7,13 +7,13 @@ const jwt = require('jsonwebtoken');
 const JWT_KEY = "jwtactive987";
 const JWT_RESET_KEY = "jwtreset987";
 
-const AuthServices = require('../services/AuthServices')
+//const AuthServices = require('../services/AuthServices')
 
 //------------ User Model ------------//
 const User = require('../models/User');
 
 //------------ Register ------------//
-exports.register = async (req, res) => {
+/*exports.register = async (req, res) => {
 	const respond = await AuthServices.register(req.headers, req.body)
 	res.status(200).json(respond)
 }
@@ -41,7 +41,7 @@ exports.resend = async (req, res) => {
 exports.forgotPassword = async (req, res) => {
     const respond = await AuthServices.forgot(req)
 	res.status(200).json(respond)
-}
+}*/
 
 //------------ Redirect to Reset ------------//
 exports.gotoReset = (req, res) => {

@@ -104,7 +104,7 @@ app.use('/api', require('./routes/index'));
 
 console.log('Index is configured...')
 
-app.use('/auth', require('./routes/auth'));
+//app.use('/auth', require('./routes/auth'));
 
 setupSwagger(app); 
 

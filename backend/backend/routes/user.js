@@ -12,7 +12,7 @@ const AuthMiddleware = require('../middlewares/Authentication')
 const UserController = require('../controllers/UserController')
 
 // customer
-router.get('/me', AuthMiddleware([ROLE.CUSTOMER, ROLE.SPONSOR, ROLE.OWNER]), UserController.getProfile)
+/*router.get('/me', AuthMiddleware([ROLE.CUSTOMER, ROLE.SPONSOR, ROLE.OWNER]), UserController.getProfile)
 router.get('/me/nyxcipher/list', AuthMiddleware([ROLE.CUSTOMER, ROLE.SPONSOR, ROLE.OWNER]), UserController.getNyxciphers)
 router.get('/me/nyxcipher/:id', AuthMiddleware([ROLE.CUSTOMER, ROLE.SPONSOR, ROLE.OWNER]), UserController.getNyxcipher)
 router.get('/me/active/nyxcipher/list', AuthMiddleware([ROLE.CUSTOMER, ROLE.SPONSOR, ROLE.OWNER]), UserController.getActiveNyxciphers)
@@ -30,7 +30,7 @@ router.get('/sponsors', AuthMiddleware(ROLE.OWNER), UserController.getSponsors)
 router.post('/sponsor', AuthMiddleware(ROLE.OWNER), UserController.saveSponsor)
 router.put('/:id', AuthMiddleware(ROLE.OWNER), UserController.updatePerson)
 router.delete('/:id', AuthMiddleware(ROLE.OWNER), UserController.deletePerson)
-
+*/
 
 /**
  * @swagger
